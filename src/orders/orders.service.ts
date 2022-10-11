@@ -225,6 +225,7 @@ export class OrdersService {
       };
     }
   }
+
   async editOrder(
     user: User,
     { id: orderId, status }: EditOrderInput,
