@@ -6,7 +6,6 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import * as AWS from 'aws-sdk';
-import { fileURLToPath } from 'url';
 
 const BUCKET_NAME = 'kimchieat1424'; ///unique한 name이어야함.
 
@@ -36,6 +35,7 @@ export class UploadsController {
     } catch (e) {
       console.log(e);
       return null;
+      console.log(e);
     }
   }
 }
