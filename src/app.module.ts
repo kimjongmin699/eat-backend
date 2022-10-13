@@ -38,6 +38,8 @@ import { UploadsModule } from './uploads/uploads.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
+      introspection: true,
+      playground: true,
       subscriptions: {
         'graphql-ws': {
           onConnect: (context: Context<any>) => {
